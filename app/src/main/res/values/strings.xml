@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PackageDelivery</string>
+    <string name="AppName">Delivery</string>
+    <string name="logbtn">Login</string>
+    <string name="signBTN">Signup</string>
+    <string name="sign">Signup Here</string>
+    <string name="signbtn">Signup</string>
+    <string name="order">Order Now</string>
+    <string name="history">History</string>
+    <string name="profile">My Profile</string>
+    <string name="OrderText">Order Menu</string>
+    <string name="Items">Items</string>
+    <string name="cartADD">Add to Cart</string>
+    <string name="Burger" />
+    <string name="item1">Pizza</string>
+    <string name="item2">Burger</string>
+    <string name="item3">submarine bun</string>
+    <string name="item4">BBQ</string>
+    <string name="item5">crispy chicken</string>
+    <string name="item6">sandwich</string>
+</resources>
