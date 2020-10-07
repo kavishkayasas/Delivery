@@ -21,6 +21,8 @@ public class Home extends AppCompatActivity {
         btn1 = findViewById(R.id.btn1);//Order Now
         btn2 = findViewById(R.id.btn2);//History
         btn3 = findViewById(R.id.btn3);//Profile
+        Intent intent = getIntent();
+        final String username = intent.getStringExtra("userName");
 
 
 
@@ -30,6 +32,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(),Order.class);
+                intent.putExtra("name",username);
                 startActivity(intent);
 
             }

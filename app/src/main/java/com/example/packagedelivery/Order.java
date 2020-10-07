@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -32,6 +33,10 @@ public class Order extends AppCompatActivity {
 
         dbRef = FirebaseDatabase.getInstance().getReference().child("Item");
 
+        Intent intent = getIntent();
+        final String itemname = intent.getStringExtra("name");
+        Toast.makeText(getApplicationContext(),""+itemname,Toast.LENGTH_SHORT).show();
+
 
 
 
@@ -42,6 +47,7 @@ public class Order extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),Item.class);
                 String inm ="Pizza";
                 intent.putExtra("ItemName","Pizza");
+                intent.putExtra("mobile",itemname);
                 startActivity(intent);
 
 
